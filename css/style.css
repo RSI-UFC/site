@@ -4,11 +4,11 @@ html, body{
 }
 
 .btn-outline-light:hover {
-	color: black;
+	color: #1a1a1a;
 }
 
 .btn-outline-dark:hover {
-	background-color: black;
+	background-color: #1a1a1a;
 }
 
 .btn {
@@ -63,15 +63,19 @@ html, body{
 #sobre, #servicos, #membros{
 	padding: 6rem 0 6rem 0;
 	text-align: center;
+
 }
 
 #sobre img{
+	opacity: 80%;
 	margin-top: 4em;
 	margin-bottom: 4em;
 	height: 10em;
+	filter: opacity(90%);
 }
 
 #servicos img{
+	filter: opacity(90%);
 	margin: 5em 0 2em 0;
 	height: 6em;
 }
@@ -82,13 +86,13 @@ html, body{
 }
 
 #contato a{
-	color: black;
+	color: #1a1a1a;
 }
 
 #footer {
 	color: white;
 	text-align: center;
-	background-color: #333;
+	background-color: #1a1a1a;
 	padding: 2em 0 1em 0;
 }
 
