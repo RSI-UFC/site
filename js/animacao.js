@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('#bar-link, #btn-inicio, .footer-link').click(function(e){
+  $('.nav-link, #btn-inicio, .footer-link').click(function(e){
     $('.collapse').collapse('hide');
     var linkHref = $(this).attr("href");
     $('html, body').animate({
