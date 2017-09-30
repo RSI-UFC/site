@@ -50,16 +50,6 @@ html, body{
 	height: 6rem;
 }
 
-#eventos {
-	background: url("../img/root-rsi-cover.jpg") center center no-repeat;
-	background-size: cover;
-}
-
-#eventos .btn-outline-light:hover{
-	background-color: transparent;
-	color: white;
-}
-
 #sobre, #servicos, #membros{
 	padding: 6rem 0 6rem 0;
 	text-align: center;
