@@ -46,14 +46,18 @@ html, body{
 	background-size: cover;
 }
 
-#inicio img{
+#eventos {
+	background: url("../img/root-ctf-cover.jpg") center center no-repeat;
+	background-size: cover;
+}
+
+#inicio img, #eventos img{
 	height: 6rem;
 }
 
 #sobre, #servicos, #membros{
 	padding: 6rem 0 6rem 0;
 	text-align: center;
-
 }
 
 #sobre img{
