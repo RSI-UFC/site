@@ -8,9 +8,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+     <!-- Fontes -->
+     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Share+Tech+Mono" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-root.css">
 </head>
 <body data-spy="scroll" data-target="#SiteNav">
     <!--NavBar-->
@@ -30,42 +33,123 @@
               <a class="nav-link" href="#sobre">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#servicos">Serviços</a>
+              <a class="nav-link" href="#atividades">Atividades</a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#convidados">Convidados</a>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#membros">Membros</a>
+              <a class="nav-link" href="#cronograma">Cronograma</a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#inscrever">Inscrição</a>
+            </li> -->
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#ctf">CTF</a>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#contato">Contato</a>
+              <a class="nav-link" href="#local">Local</a>
             </li>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfeyZuM1LZ1pGbI7yrG7IfRjVtrsc0FvpK8xbMFbKovKx0kvQ/viewform?hl=pt-br" class="btn btn-outline-light" role="button" aria-pressed="true">Solicitar Serviço</a>
+
+
+            <!-- Botão de se inscrever no Simpla[DEVE SER ATUALIZADO AINDA] -->
+            <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLSfeyZuM1LZ1pGbI7yrG7IfRjVtrsc0FvpK8xbMFbKovKx0kvQ/viewform?hl=pt-br" class="btn btn-outline-light" role="button" aria-pressed="true">Solicitar Serviço</a> -->
           </ul>
         </div>
     </nav>
 
     <!-- Inicio -->
     <section id="inicio" class="capa">
-        <div class="mask"></div>
-        <div class="container">
-          <img src="img/logorsiwhite.svg" alt="">
-          <h1 class="display-1">RSI</h1>
-          <p class="h4">Residência em Segurança da Informação</p><br>
-          <a href="#sobre" class="btn btn-outline-light" id = "btn-inicio" role="button" aria-pressed="true">Conheça o Projeto</a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfeyZuM1LZ1pGbI7yrG7IfRjVtrsc0FvpK8xbMFbKovKx0kvQ/viewform?hl=pt-br" class="btn btn-outline-light" role="button" aria-pressed="true">Solicitar Serviço</a>
+      <div class="mask"></div>  
+      <div class="container">
+          <h1 class="display-1" style ="font-family: 'Anonymous Pro', monospace;">R00T@RSI</h1>
+          <p class="h3" style ="font-family: 'Share Tech Mono', monospace;">O maior evento de Segurança da Informação de Fortaleza</p><br>
+          <p class="h3" style ="font-family: 'Share Tech Mono', monospace;">De 23 a 27 de Julho</p><br>
         </div> 
     </section>
 
     <!-- Sobre o Evento -->
+    <section id="sobre">
+      <div class="mask"></div>
+        <div class="container">
+          <h3 class="display-3" style ="font-family: 'Anonymous Pro', monospace;">Sobre o evento</h1>
+          <p style="text-align: justify; font-family: 'Share Tech Mono', monospace;">O ROOT@RSI está na sua segunda edição e dessa vez vem mais forte do que nunca. Com parceria com o NIND e com o apoio da comunidade conseguimos proporcionar a todos uma experiência incrivel e uma oportunidade de maior contato com o mundo da segurança da Informação. O evento contará com palestras de Peritos da PEFOCE, APECOF e Polícia Federal, além de contar com a presença de palestrantes renomados dos setores acadêmico e privado de Segurança da Informação de Fortaleza. Por fim, no nosso evento de encerramento, realizaremos um CTF com muita adrenalina e energia, como todo bom CTF tem que ser. Não perca essa oportunidade.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Atividades -->
+    <section id="atividades">
+        <div class="container">
+            <h1 class="display-1" style ="font-family: 'Anonymous Pro', monospace; ">Atividades</h1>
+            <div class="row">
+              <div class="col-md-4 ml-auto">
+                <img src="img/root/icons/palestra-icone.png">
+                <p class="h4" style ="font-family: 'Anonymous Pro', monospace; font-weight: bold">PALESTRAS</p>
+                <p style="text-align: justify; font-family: 'Share Tech Mono', monospace;">&emsp;&emsp;&emsp;Palestras com profissionais da área da Segurança da Informação, peritos e entusiastas. Trazendo discussões sobre assuntos relevantas atualmente da área.</p>
+              </div>
+              <div class="col-md-4">
+                <img src="img/root/icons/minicurso-icone.png">
+                <p class="h4" style ="font-family: 'Anonymous Pro', monospace; font-weight: bold">MINI-CURSOS</p>
+                <p style="text-align: justify; font-family: 'Share Tech Mono', monospace;">&emsp;&emsp;&emsp;Mini-cursos trazidos pelos membros do projeto RSI além de um mini-curso trazido por uma pessoa da comunidade.</p>
+              </div>
+              <div class="col-md-4 mr-auto">
+                <img src="img/root/icons/ctf-icone.png">
+                <p class="h4" style ="font-family: 'Anonymous Pro', monospace; font-weight: bold">CAPTURE THE FLAG!</p>
+                <p style="text-align: justify; font-family: 'Share Tech Mono', monospace;">&emsp;&emsp;&emsp;Uma eletrizante competição envolvendo conhecimentos em Segurança da Informação. Venha se divertir resolvendo os desafios e capturando todas as flags!</p>
+              </div>
+          </div>
+        </div>
+    </section>
+
     <!-- Convidados -->
+    <!-- <section id="convidados">
+      <div class="container">
+        <h1 class="display-1" style ="font-family: 'Anonymous Pro', monospace;">Convidados</h1>
+        Fazer a seção de convidados como a dos membros do RSI    
+      </div>
+    </section> -->
+
     <!-- Cronograma -->
-    <!-- Inscrever-se -->
-    <!-- CTF -->
+    <section id="cronograma">
+      <div class="container">
+        <h1 class="display-1" style ="font-family: 'Anonymous Pro', monospace;">Cronograma</h1>
+        <p class="h3" style ="font-family: 'Share Tech Mono', monospace;">De 23 a 27 de Julho</p><br>
+
+        <!-- Fazer 2 colunas -->
+
+      </div>
+    </section>
+
     <!-- Local -->
-    <!-- Colaboradores -->
-    <!-- Footer -->
+    <section id="local">
+      <div class="container">
+        <h1 class="display-1" style ="font-family: 'Anonymous Pro', monospace; padding-bottom: 1em">Local</h1>
+        <div class="row" style="padding-bottom: 1em;">
+          <div class="col-md-3 ml-auto">
+            <p class="h4" style ="font-family: 'Anonymous Pro', monospace; font-weight: bold">PALESTRAS</p>
+            <p style="text-align: justify; font-family: 'Share Tech Mono', monospace;">&emsp;&emsp;&emsp;As Palestras irão acontecer no Auditório do Centro de Ciências - Reitor Ícaro de Sousa Moreira, Ac. Público, 915 - Pici, Fortaleza - CE, 60020-181</p>
+            <a href="https://goo.gl/maps/kZioCE4Qx4U2" target="_blank" class="btn btn-outline-light btn-lg" role="button" aria-pressed="true" style="margin-top: 2em;">Ver no Google Maps</a>
+          </div>
+          <div class="col-md-3">
+            <p class="h4" style ="font-family: 'Anonymous Pro', monospace; font-weight: bold">MINI-CURSOS</p>
+            <p style="text-align: justify; font-family: 'Share Tech Mono', monospace;">&emsp;&emsp;&emsp;Os mini-cursos irão acontecer LEC-1 no Departamento de Computação UFC - Bloco 910, Centro de Ciências, Universidade Federal do Ceará - Campus do Pici, Bloco 910, s/n - Pici, Fortaleza - CE, 60455-760</p>
+            <a href="https://goo.gl/maps/qXRKjFAUns92" target="_blank" class="btn btn-outline-light btn-lg" role="button" aria-pressed="true" style="margin-top: 2em;">Ver no Google Maps</a>
+          </div>
+          <div class="col-md-3 mr-auto">
+            <p class="h4" style ="font-family: 'Anonymous Pro', monospace; font-weight: bold">CTF</p>
+            <p style="text-align: justify; font-family: 'Share Tech Mono', monospace;">&emsp;&emsp;&emsp;O CTF vai acontecer no Centro de Convivência e Eventos do Pici, Ac. Público, 913 - Pici, Fortaleza - CE, 60020-181</p>
+            <a href="https://goo.gl/maps/eRQ4Z5M2pJt" target="_blank" class="btn btn-outline-light btn-lg" role="button" aria-pressed="true" style="margin-top: 2em;">Ver no Google Maps</a>
+          </div>
+        </div>
 
+      </div>
+    </section>
 
-
+    <!-- Scripts  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="js/animacao.js"></script>
 </body>
 </html>

@@ -94,5 +94,8 @@ html, body{
 	.display-3{
 		font-size: 3em;
 	}
+	#eventos h1{
+		font-size: 4em;
+	}
 }
 
