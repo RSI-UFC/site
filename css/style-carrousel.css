@@ -1,0 +1,13 @@
+.slider-root {
+  /* width: 300px;
+  height: 300px;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;   */
+      scroll-behavior: smooth;
+}
+.slider-root-slid  {
+  /* width: 300px;
+  flex-shrink: 0;
+  height: 100%; */
+}
