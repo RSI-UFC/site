@@ -20,7 +20,24 @@ $(document).ready(function(){
         }
       }, timing);
   });
-  
+
+
+
+
+function slide_value(val){
+    $( "div.slider-root" ).children().css('display','none');
+    // child_slid[i].style.display= 'none'
+    // i++;
+    if(val>=child_slid.length){
+        val=0;
+    }
+    if(val<0){
+        val=origin_slid.length-1;
+    }
+    child_slid[val].style = origin_slid[val].style;
+    continue_s=false;
+}
+
 function slide_next(){
     child_slid[i].style.display= 'none'
     i++;
