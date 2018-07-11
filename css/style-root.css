@@ -56,7 +56,28 @@ html, body{
 	color: black;
 }
 
+#cronograma .nav-link {
+	color: #000;
+}
 
+#cronograma .active {
+	font-weight: bold;
+}
+
+#cronograma .card-header, .card-body{
+	text-align: left;
+	background-color: #fff;
+}
+
+#cronograma .card {
+	word-wrap: break-word;
+	font-weight: normal;
+	margin: 1rem 0 1rem 0;
+}
+
+.btn {
+	max-width: 100%;
+}
 
 #sobre h3 {
 	padding-bottom: 4rem;
@@ -79,6 +100,10 @@ html, body{
 	text-align: center;
 	background-color: black;
 	padding: 2em 0 1em 0;
+}
+
+#footer img{
+	margin: 2em 2em 2em 2em;
 }
 
 @media (max-width: 576px){
