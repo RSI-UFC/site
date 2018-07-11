@@ -4,13 +4,14 @@
   display: flex;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;   */
-      scroll-behavior: smooth;
-      height: 600px
+      /* scroll-behavior: smooth; */
+      /* height: 600px */
 }
 .slider-root-slid  {
   /* width: 300px;
   flex-shrink: 0;
   height: 100%; */
+  /* display: none; */
 }
 
 .slider-root p{

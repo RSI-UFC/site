@@ -2,10 +2,11 @@
 let i =0;
 let timing = 5000;
 let continue_s= true;
-$( "div.slider-root" ).children().css('display','none');
-let origin_slid = $( "div.slider-root" ).children();
-let check_slid = $("div.check_slid");
-let child_slid = $( "div.slider-root" ).children();
+$( "div.slider-root-slid" ).children().css('display','none');
+let origin_slid = $( "div.slider-root-slid" ).children();
+let child_slid = $( "div.slider-root-slid" ).children();
+console.log(child_slid)
+console.log(origin_slid)
 child_slid[0].style = origin_slid[0].style
 $(document).ready(function(){
     window.setInterval(function(){
@@ -25,7 +26,7 @@ $(document).ready(function(){
 
 
 function slide_value(val){
-    $( "div.slider-root" ).children().css('display','none');
+    $( "div.slider-root-slid" ).children().css('display','none');
     // child_slid[i].style.display= 'none'
     // i++;
     if(val>=child_slid.length){
