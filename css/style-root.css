@@ -49,7 +49,7 @@ html, body{
 	background: transparent;
 }
 
-#sobre, #convidados, #cronograma {
+#sobre, #convidados, #cronograma, #local{
 	padding: 6rem 0 6rem 0;
 	text-align: center;
 	background: white;
@@ -73,6 +73,7 @@ html, body{
 	word-wrap: break-word;
 	font-weight: normal;
 	margin: 1rem 0 1rem 0;
+	color: black;
 }
 
 .btn {
@@ -83,7 +84,7 @@ html, body{
 	padding-bottom: 4rem;
 }
 
-#atividades, #local {
+#atividades {
 	padding: 6rem 0 6rem 0;
 	text-align: center;
 	background: black;
