@@ -56,7 +56,31 @@ html, body{
 	color: black;
 }
 
+#convidados .card{
+	margin-top: 1em;
+}
 
+#convidados img{
+	width: 12rem;
+	height: 12rem;
+	margin: 1em;
+	float: center;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.indicador {
+	width: 1em;
+	height: 1em;
+	background: #1a1a1a;
+	border-radius: 50%;
+	margin: 0.5em;
+	padding-right: 1em;
+}
+
+.indicadores {
+	margin-top: 2em;
+}
 
 #cronograma .nav-link {
 	color: #000;
