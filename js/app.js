@@ -24,15 +24,16 @@
 
   const teamGroups = [
     { role:"Orientação", members:[
-      { name:"Emanuel Bezerra", focus:"Professor Orientador", photo:"img/members/emanuelbezerra.jpg" }
+      { name:"Emanuel Bezerra", focus:"Professor Orientador", photo:"img/members/emanuelbezerra.jpg" },
+      { name:"Ramon Martins", focus:"Especialista em segurança ofensiva @ PrideSecurity", photo:"img/members/ramonmartins.png" },
+      { name:"Igor Benevides", focus:"Specialist Red Team Operator @ CovertSwarm", photo:"img/members/igorbenevides.jpg" },
+      { name:"Jarelio Filho", focus:"Especialista em segurança ofensiva @ PrideSecurity" },
+      { name:"Davi Chaves", focus:"Especialista em segurança defensiva @ BlueDiamond", photo:"img/members/davichaves.jpg" }
     ]},
     { role:"Bolsistas", members:[
-      { name:"André Peixoto", focus:"Bolsista do projeto" }
-    ]},
-    { role:"Bolsistas - Programa Cientista Chefe", members:[
-      { name:"Jarelio Filho", focus:"Programa Cientista Chefe" },
-      { name:"João Guilherme", focus:"Programa Cientista Chefe" },
-      { name:"Davi", focus:"Programa Cientista Chefe" }
+      { name:"André Peixoto", focus:"Bolsista do projeto" },
+      { name:"Davi", focus:"Programa Cientista Chefe" },
+      { name:"João Guilherme", focus:"Programa Cientista Chefe", photo:"img/members/joaoguilherme.jpg" }
     ]},
     { role:"Voluntários", members:[
       { name:"Caio Capêlo", focus:"Voluntário" },
@@ -40,7 +41,8 @@
       { name:"Luna", focus:"Voluntário" },
       { name:"Alexandre Grangeiro", focus:"Voluntário" },
       { name:"Bento", focus:"Voluntário" },
-      { name:"Denilo", focus:"Voluntário" }
+      { name:"Denilo", focus:"Voluntário" },
+      { name:"João Duarte", focus:"Voluntário", photo:"img/members/joaoduarte.jpg" }
     ]}
   ];
 
@@ -91,7 +93,7 @@
     { num:"15", label:"Membros" }
   ];
   const contatos = [
-    { label:"E-mail", value:"rsi@dc.ufc.br" },
+    { label:"E-mail", value:"rsi@dc.ufc.br", href:"mailto:rsi@dc.ufc.br" },
     { label:"Onde estamos", value:"Departamento de Computação · UFC — Campus do Pici, Fortaleza/CE" }
   ];
   const navDefs = [
@@ -224,7 +226,7 @@
         <div style="position:relative;overflow:hidden;border:1px solid rgba(129,140,248,.25);border-radius:24px;padding:56px 48px;background:radial-gradient(700px 400px at 100% 0%, rgba(99,102,241,.22), transparent 60%), linear-gradient(180deg,#0D0D17,#0A0A12);">
           <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#818CF8;">// Vagas abertas · 2026.2</div>
           <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:38px;letter-spacing:-.02em;color:#F4F4FB;margin:16px 0 0;max-width:620px;line-height:1.1;">Quer entrar para a residência?</h2>
-          <p style="color:#A0A0B6;font-size:17px;line-height:1.7;margin:16px 0 28px;max-width:560px;">Inscrições abertas para residentes nas linhas de AppSec, Redes &amp; Cloud, Forense Digital e Segurança Ofensiva.</p>
+          <p style="color:#A0A0B6;font-size:17px;line-height:1.7;margin:16px 0 28px;max-width:560px;">Inscrições abertas para residentes nas linhas de Appsec, Redteam &amp; BlueTeam.</p>
           <button data-go="selecao" style="display:inline-flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;padding:15px 28px;border-radius:11px;border:none;cursor:pointer;color:#0A0A12;background:${grad};box-shadow:0 14px 36px -12px rgba(99,102,241,.6);">Ver processo seletivo →</button>
         </div>
       </section>
@@ -462,34 +464,34 @@
       <section style="max-width:1240px;margin:0 auto;padding:88px 32px 96px;">
         <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#818CF8;">// Fale com a gente</div>
         <h1 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:46px;letter-spacing:-.025em;color:#F4F4FB;margin:18px 0 0;">Contato</h1>
-        <p style="color:#A0A0B6;font-size:17px;line-height:1.7;margin:16px 0 40px;max-width:600px;">Dúvidas sobre o processo seletivo, parcerias com empresas ou colaborações de pesquisa? Escreva pra gente.</p>
-        <div style="display:grid;grid-template-columns:0.9fr 1.1fr;gap:40px;align-items:start;">
-          <div style="display:flex;flex-direction:column;gap:18px;">
-            ${contatos.map(c => `
-              <div style="background:#0B0B14;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:22px;">
-                <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#6E6E86;margin-bottom:8px;">${esc(c.label)}</div>
-                <div style="font-size:15.5px;color:#EDEDF6;">${esc(c.value)}</div>
-              </div>`).join("")}
+        <p style="color:#A0A0B6;font-size:17px;line-height:1.7;margin:16px 0 40px;max-width:600px;">Workshops para escolas e universidades, interesse no processo seletivo ou outras dúvidas — escolha o caminho abaixo.</p>
+
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;align-items:stretch;">
+          <!-- Workshops -->
+          <div style="background:radial-gradient(420px 220px at 0% 0%, rgba(34,211,238,.14), transparent 60%), linear-gradient(180deg,#101019,#0B0B12);border:1px solid rgba(34,211,238,.22);border-radius:18px;padding:30px;display:flex;flex-direction:column;">
+            <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#67E8F9;">// Escolas e universidades</div>
+            <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;letter-spacing:-.02em;color:#F4F4FB;margin:14px 0 0;">Solicitar workshops</h3>
+            <p style="color:#A0A0B6;font-size:15px;line-height:1.7;margin:12px 0 24px;">Levamos workshops e palestras de segurança da informação para escolas e universidades. Conte pra gente o público, o tema e a data desejada, e montamos uma proposta.</p>
+            <a href="mailto:rsi@dc.ufc.br?subject=Solicita%C3%A7%C3%A3o%20de%20workshop%20%E2%80%94%20escola%2Funiversidade&body=Institui%C3%A7%C3%A3o%3A%20%0AP%C3%BAblico%2Fturma%3A%20%0ATema%20de%20interesse%3A%20%0AData%20desejada%3A%20%0A" style="display:inline-flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;padding:14px 22px;border-radius:11px;text-decoration:none;color:#0A0A12;background:linear-gradient(135deg,#22D3EE,#818CF8);box-shadow:0 14px 36px -14px rgba(34,211,238,.5);align-self:flex-start;margin-top:auto;">Solicitar workshop →</a>
           </div>
-          <div style="background:linear-gradient(180deg,#101019,#0B0B12);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:30px;">
-            ${state.contactSent ? `
-              <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 0;gap:14px;">
-                <div style="width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;color:#0A0A12;background:linear-gradient(135deg,#818CF8,#22D3EE);">✓</div>
-                <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:20px;color:#F2F2FA;">Mensagem enviada!</div>
-                <div style="color:#8E8EA6;font-size:14.5px;max-width:340px;line-height:1.6;">Obrigado pelo contato. Respondemos em até alguns dias úteis.</div>
-              </div>
-            ` : `
-              <form data-contact style="display:flex;flex-direction:column;gap:16px;">
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
-                  <label style="display:flex;flex-direction:column;gap:7px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8E8EA6;">Nome<input required class="field" style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:12px 14px;color:#E6E6F0;font-family:'IBM Plex Sans',sans-serif;font-size:14px;outline:none;"></label>
-                  <label style="display:flex;flex-direction:column;gap:7px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8E8EA6;">E-mail<input required type="email" class="field" style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:12px 14px;color:#E6E6F0;font-family:'IBM Plex Sans',sans-serif;font-size:14px;outline:none;"></label>
-                </div>
-                <label style="display:flex;flex-direction:column;gap:7px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8E8EA6;">Assunto<input required class="field" style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:12px 14px;color:#E6E6F0;font-family:'IBM Plex Sans',sans-serif;font-size:14px;outline:none;"></label>
-                <label style="display:flex;flex-direction:column;gap:7px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8E8EA6;">Mensagem<textarea required rows="5" class="field" style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:12px 14px;color:#E6E6F0;font-family:'IBM Plex Sans',sans-serif;font-size:14px;outline:none;resize:vertical;"></textarea></label>
-                <button type="submit" style="font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;padding:15px;border-radius:11px;border:none;cursor:pointer;color:#0A0A12;background:${grad};box-shadow:0 14px 36px -14px rgba(99,102,241,.6);">Enviar mensagem →</button>
-              </form>
-            `}
+          <!-- Processo seletivo -->
+          <div style="background:radial-gradient(420px 220px at 100% 0%, rgba(99,102,241,.18), transparent 60%), linear-gradient(180deg,#101019,#0B0B12);border:1px solid rgba(129,140,248,.25);border-radius:18px;padding:30px;display:flex;flex-direction:column;">
+            <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#818CF8;">// Quer ser residente?</div>
+            <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;letter-spacing:-.02em;color:#F4F4FB;margin:14px 0 0;">Processo seletivo</h3>
+            <p style="color:#A0A0B6;font-size:15px;line-height:1.7;margin:12px 0 24px;">Tem interesse em entrar para a residência? Demonstre interesse e a gente te avisa sobre as próximas seleções.</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:auto;">
+              <a href="mailto:rsi@dc.ufc.br?subject=Interesse%20no%20processo%20seletivo&body=Nome%3A%20%0ACurso%2Fper%C3%ADodo%3A%20%0ALinha%20de%20interesse%3A%20%0A" style="display:inline-flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;padding:14px 22px;border-radius:11px;text-decoration:none;color:#0A0A12;background:${grad};box-shadow:0 14px 36px -14px rgba(99,102,241,.6);">Tenho interesse →</a>
+              <button data-go="selecao" style="font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;padding:14px 22px;border-radius:11px;cursor:pointer;color:#E6E6F0;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.14);">Ver as etapas</button>
+            </div>
           </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:20px;">
+          ${contatos.map(c => `
+            <div style="background:#0B0B14;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:22px;">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#6E6E86;margin-bottom:8px;">${esc(c.label)}</div>
+              <div style="font-size:15.5px;color:#EDEDF6;">${c.href ? `<a href="${esc(c.href)}" class="footlink" style="color:#A5B4FC;text-decoration:none;">${esc(c.value)}</a>` : esc(c.value)}</div>
+            </div>`).join("")}
         </div>
       </section>
     </div>`;
