@@ -87,7 +87,7 @@
   const stats = [
     { num:"2016", label:"Ano de fundação" },
     { num:"60+", label:"Residentes formados" },
-    { num:"18", label:"Artigos publicados" },
+    { num:"4", label:"Artigos publicados" },
     { num:"15", label:"Membros" }
   ];
   const contatos = [
@@ -541,6 +541,17 @@
               <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;color:#F4F4FB;">${esc(sigla)}</span>
             </div>
             <p style="color:#7E7E97;font-size:13.5px;line-height:1.65;margin:16px 0 0;">${esc(nomeProjeto)} · ${esc(universidade)}.</p>
+            <div style="display:flex;gap:14px;margin-top:18px;">
+              <a href="https://www.instagram.com/rsi.ufc" target="_blank" rel="noopener" class="footlink" style="color:#7E7E97;text-decoration:none;display:flex;" title="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              </a>
+              <a href="https://www.youtube.com/@rsi-ufc" target="_blank" rel="noopener" class="footlink" style="color:#7E7E97;text-decoration:none;display:flex;" title="YouTube">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/company/40768351/" target="_blank" rel="noopener" class="footlink" style="color:#7E7E97;text-decoration:none;display:flex;" title="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
           </div>
           <div style="display:flex;gap:56px;flex-wrap:wrap;">
             <div style="display:flex;flex-direction:column;gap:11px;">
