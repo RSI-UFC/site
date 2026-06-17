@@ -2,9 +2,41 @@
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url=/site/">
-  <title>RSI</title>
-  <script>window.location.replace("/site/");</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RSI — Residência em Segurança da Informação</title>
+  <link rel="icon" type="image/png" href="assets/logo-gradient.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #08080F; }
+    body { -webkit-font-smoothing: antialiased; }
+    ::selection { background: rgba(129,140,248,.35); color: #fff; }
+    ::-webkit-scrollbar { width: 11px; height: 11px; }
+    ::-webkit-scrollbar-track { background: #08080F; }
+    ::-webkit-scrollbar-thumb { background: #23233a; border-radius: 6px; border: 3px solid #08080F; }
+    ::-webkit-scrollbar-thumb:hover { background: #34344f; }
+    input, textarea, button { font-family: inherit; }
+
+    /* Transitions + hover/focus states (replicating the mock's style-hover / style-focus) */
+    button, article, a, .card { transition: border-color .18s ease, transform .18s ease, opacity .18s ease, color .18s ease, background .18s ease; }
+    .hov-indigo:hover { border-color: rgba(129,140,248,.45) !important; }
+    .hov-indigo-4:hover { border-color: rgba(129,140,248,.4) !important; }
+    .hov-lift:hover { border-color: rgba(129,140,248,.45) !important; transform: translateY(-3px); }
+    .hov-cyan:hover { border-color: rgba(34,211,238,.4) !important; }
+    .nav-link:hover { opacity: 1; }
+    .nav-link.inactive:hover span { color: #fff !important; }
+    .pill:hover { border-color: rgba(129,140,248,.5) !important; color: #fff !important; }
+    .footlink:hover { color: #fff !important; }
+    .pdf:hover { background: rgba(129,140,248,.12) !important; }
+    .field:focus { border-color: rgba(129,140,248,.6) !important; }
+  </style>
 </head>
-<body></body>
+<body>
+  <div id="app"></div>
+  <script src="js/app.js"></script>
+</body>
 </html>
