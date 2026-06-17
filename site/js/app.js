@@ -47,11 +47,7 @@
   ];
 
   const events = [
-    { title:"Workshop: Threat Hunting com Wazuh", type:"Workshop", day:"24", month:"Jun", local:"Bloco 950 — Lab 3", status:"Próximo" },
-    { title:"Hackathon de Segurança Ofensiva", type:"Hackathon", day:"15", month:"Ago", local:"Local a definir", status:"Próximo" },
-    { title:"Palestra: Segurança em Pipelines CI/CD", type:"Palestra", day:"05", month:"Jul", local:"Auditório Central", status:"Próximo" },
-    { title:"CTF Interno RSI 2026.1", type:"CTF", day:"18", month:"Mai", local:"Online", status:"Realizado" },
-    { title:"Bootcamp de Engenharia Reversa", type:"Bootcamp", day:"02", month:"Abr", local:"Lab de Segurança", status:"Realizado" }
+    { title:"Processo Seletivo 2026.2", type:"Seletivo", day:"", month:"Jul 2026", local:"a definir", status:"Próximo" }
   ];
   const tabNames = ["Todos","Próximos","Realizados"];
 
@@ -66,7 +62,9 @@
     "Estar matriculado em curso de graduação ou pós-graduação.",
     "Disponibilidade de 12 a 16 horas semanais.",
     "Noções de programação (qualquer linguagem).",
-    "Vontade de aprender — não exigimos experiência prévia em segurança."
+    "Vontade de aprender — não exigimos experiência prévia em segurança.",
+    "Noções de redes.",
+    "Noções de terminal."
   ];
   const cronograma = [
     { fase:"Inscrições", data:"01–20 jul" },
@@ -439,8 +437,10 @@
           ${filtered.map(e => `
             <article class="hov-indigo-4" style="background:linear-gradient(180deg,#101019,#0B0B12);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:24px 28px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;">
               <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;width:74px;height:74px;border-radius:14px;background:rgba(129,140,248,.1);border:1px solid rgba(129,140,248,.2);flex:none;">
-                <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;color:#C7D2FE;line-height:1;">${esc(e.day)}</span>
-                <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8E8EA6;margin-top:4px;">${esc(e.month)}</span>
+                ${e.day
+                  ? `<span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;color:#C7D2FE;line-height:1;">${esc(e.day)}</span>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8E8EA6;margin-top:4px;">${esc(e.month)}</span>`
+                  : `<span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;text-align:center;color:#8E8EA6;line-height:1.4;">${esc(e.month)}</span>`}
               </div>
               <div style="flex:1;min-width:220px;">
                 <div style="display:flex;align-items:center;gap:10px;margin-bottom:7px;">
