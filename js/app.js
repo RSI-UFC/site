@@ -17,10 +17,12 @@
 
   // ---------- Data ----------
   const papers = [
-    { title:"Applying DevSecOps Approach in Legacy Computing Infrastructures: A Case Study in Public Sector of Brazil", authors:"Lima, J. C. C.; Campos, F. R. M.; Gomes, R. L.; Rodrigues, E. B.; Andrade, R. M. C.; Silva, C. L.; Bentes, D. C.; Cialdini, A. S.", venue:"CCIS · Dependable and Secure Computing", year:2026, area:"DevSecOps", abstract:"Estudo de caso sobre a adoção de práticas de DevSecOps em infraestruturas de computação legadas no setor público brasileiro.", url:"https://link.springer.com/chapter/10.1007/978-3-032-11539-3_1" }
+    { title:"Applying DevSecOps Approach in Legacy Computing Infrastructures: A Case Study in Public Sector of Brazil", authors:"Lima, J. C. C.; Campos, F. R. M.; Gomes, R. L.; Rodrigues, E. B.; Andrade, R. M. C.; Silva, C. L.; Bentes, D. C.; Cialdini, A. S.", venue:"LADC 2025 · CCIS (Springer)", year:2026, area:"DevSecOps", abstract:"Estudo de caso sobre a adoção de práticas de DevSecOps em infraestruturas de computação legadas no setor público brasileiro.", url:"https://doi.org/10.1007/978-3-032-11539-3_1", linkLabel:"Springer" },
+    { title:"Análise de Severidade e Explorabilidade de Vulnerabilidades de Segurança no Setor Público", authors:"Lima, J. C. C.; et al.", venue:"SBSEG 2025 · Anais Estendidos", year:2025, area:"Vulnerabilidades", abstract:"Análise da severidade e da explorabilidade de vulnerabilidades de segurança identificadas em sistemas do setor público.", url:"https://doi.org/10.5753/sbseg_estendido.2025.12672", linkLabel:"DOI" },
+    { title:"Testes de Segurança Estáticos na Esteira de Desenvolvimento de Aplicações: Um Estudo de Caso na SEPLAG-CE", authors:"Campos, F. R. M.; et al.", venue:"SBSEG 2025 · Trilha Indústria", year:2025, area:"DevSecOps", abstract:"Estudo de caso sobre a integração de testes de segurança estáticos (SAST) na esteira de desenvolvimento de aplicações da SEPLAG-CE." }
   ];
-  const areaNames = ["Todas","DevSecOps"];
-  const yearNames = ["Todos","2026"];
+  const areaNames = ["Todas","DevSecOps","Vulnerabilidades"];
+  const yearNames = ["Todos","2026","2025"];
 
   const teamGroups = [
     { role:"Orientação", members:[
@@ -384,7 +386,7 @@
                 <p style="color:#8E8EA6;font-size:14.5px;line-height:1.6;margin:0 0 12px;max-width:760px;">${esc(p.abstract)}</p>
                 <div style="font-size:13.5px;color:#9A9AB0;font-style:italic;">${esc(p.authors)}</div>
               </div>
-              <a href="${esc(p.url || '#')}" target="_blank" rel="noopener" class="pdf" style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#A5B4FC;text-decoration:none;border:1px solid rgba(129,140,248,.3);border-radius:9px;padding:9px 15px;white-space:nowrap;flex:none;">Springer ↗</a>
+              ${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener" class="pdf" style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#A5B4FC;text-decoration:none;border:1px solid rgba(129,140,248,.3);border-radius:9px;padding:9px 15px;white-space:nowrap;flex:none;">${esc(p.linkLabel || "Link")} ↗</a>` : ""}
             </article>`).join("")}
         </div>
         ${filtered.length === 0 ? `<div style="text-align:center;color:#6E6E86;font-family:'JetBrains Mono',monospace;font-size:14px;padding:60px 0;">Nenhum artigo nesse filtro.</div>` : ""}
