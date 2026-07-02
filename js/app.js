@@ -56,10 +56,9 @@
 
   const selSteps = [
     { n:"1", title:"Inscrição", desc:"Preencha o formulário e envie seu currículo. Aberto a estudantes de graduação e pós-graduação." },
-    { n:"2", title:"Prova técnica", desc:"Avaliação online de fundamentos: redes, sistemas operacionais, criptografia e lógica de programação." },
-    { n:"3", title:"Desafio prático (CTF)", desc:"CTF de 48h com desafios de web, forense e exploração para avaliar a prática na mão." },
-    { n:"4", title:"Entrevista", desc:"Conversa com a coordenação sobre motivação, disponibilidade e linha de pesquisa de interesse." },
-    { n:"5", title:"Resultado", desc:"Divulgação dos selecionados e início da integração à equipe e aos grupos de estudo." }
+    { n:"2", title:"Desafio prático (CTF)", desc:"CTF online de 5 dias com desafios de web, forense e exploração para avaliar a prática na mão." },
+    { n:"3", title:"Entrevista", desc:"Conversa com a coordenação sobre motivação, disponibilidade e linha de pesquisa de interesse." },
+    { n:"4", title:"Resultado", desc:"Divulgação dos selecionados e início da integração à equipe e aos grupos de estudo." }
   ];
   const requisitos = [
     "Estar matriculado em curso de graduação ou pós-graduação.",
