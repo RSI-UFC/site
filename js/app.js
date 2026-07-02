@@ -14,6 +14,7 @@
   // ---------- External links ----------
   const BLOG_URL = "https://blog.rsiproject.org";
   const FORGE_URL = "https://forge.rsiproject.org";
+  const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeEB6xQY_3g_KJ1RHjPDCHxl42ZqHmZiXUz3rjmalJcpHRang/viewform";
 
   // ---------- Data ----------
   const papers = [
@@ -323,7 +324,7 @@
                   <span style="color:#9A9AB0;">${esc(c.fase)}</span>
                   <span style="font-family:'JetBrains Mono',monospace;color:#C7D2FE;">${esc(c.data)}</span>
                 </div>`).join("")}
-              <button data-go="contato" style="width:100%;margin-top:18px;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;padding:13px;border-radius:10px;border:none;cursor:pointer;color:#0A0A12;background:${grad};">Quero me inscrever →</button>
+              <a href="${FORM_URL}" target="_blank" rel="noopener" style="display:block;text-align:center;width:100%;margin-top:18px;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;padding:13px;border-radius:10px;text-decoration:none;color:#0A0A12;background:${grad};">Quero me inscrever →</a>
             </div>
           </div>
         </div>
@@ -482,7 +483,7 @@
             <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;letter-spacing:-.02em;color:#F4F4FB;margin:14px 0 0;">Processo seletivo</h3>
             <p style="color:#A0A0B6;font-size:15px;line-height:1.7;margin:12px 0 24px;">Tem interesse em entrar para a residência? Demonstre interesse e a gente te avisa sobre as próximas seleções.</p>
             <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:auto;">
-              <a href="mailto:rsi@dc.ufc.br?subject=Interesse%20no%20processo%20seletivo&body=Nome%3A%20%0ACurso%2Fper%C3%ADodo%3A%20%0ALinha%20de%20interesse%3A%20%0A" style="display:inline-flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;padding:14px 22px;border-radius:11px;text-decoration:none;color:#0A0A12;background:${grad};box-shadow:0 14px 36px -14px rgba(99,102,241,.6);">Tenho interesse →</a>
+              <a href="${FORM_URL}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;padding:14px 22px;border-radius:11px;text-decoration:none;color:#0A0A12;background:${grad};box-shadow:0 14px 36px -14px rgba(99,102,241,.6);">Tenho interesse →</a>
               <button data-go="selecao" style="font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;padding:14px 22px;border-radius:11px;cursor:pointer;color:#E6E6F0;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.14);">Ver as etapas</button>
             </div>
           </div>
