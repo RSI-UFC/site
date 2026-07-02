@@ -56,7 +56,7 @@
 
   const selSteps = [
     { n:"1", title:"Inscrição", desc:"Preencha o formulário e envie seu currículo. Aberto a estudantes de graduação e pós-graduação." },
-    { n:"2", title:"Desafio prático (CTF)", desc:"CTF online de 5 dias com desafios de web, forense e exploração para avaliar a prática na mão." },
+    { n:"2", title:"Desafio prático (CTF)", desc:"CTF online de 7 dias com desafios de web, forense e exploração para avaliar a prática na mão." },
     { n:"3", title:"Entrevista", desc:"Conversa com a coordenação sobre motivação, disponibilidade e linha de pesquisa de interesse." },
     { n:"4", title:"Resultado", desc:"Divulgação dos selecionados e início da integração à equipe e aos grupos de estudo." }
   ];
