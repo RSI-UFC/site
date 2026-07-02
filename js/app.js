@@ -70,9 +70,9 @@
     "Noções de terminal."
   ];
   const cronograma = [
-    { fase:"Inscrições", data:"até 22 jun" },
-    { fase:"CTF online", data:"23–30 jun" },
-    { fase:"Entrevistas", data:"a partir de ago" }
+    { fase:"Inscrições", data:"até 22 jul" },
+    { fase:"CTF online", data:"23–30 jul" },
+    { fase:"Entrevistas", data:"a partir de 01 ago" }
   ];
   const faqData = [
     { q:"Preciso já saber sobre segurança?", a:"Não. Avaliamos fundamentos e potencial. A residência existe justamente para formar — buscamos curiosidade e comprometimento." },
